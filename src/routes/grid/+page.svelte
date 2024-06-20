@@ -8,17 +8,10 @@
 
 <svelte:window on:keydown={windowKeydown} />
 
-
-
-<input type="number" use:gfocus={{ autofocus: true }} bind:value={input} />
+<input type="number" use:gfocus bind:value={input} />
 <div class="viewport" style="--grid-cnt:{gridItemCount}">
 	{#each new Array(gridItemCount * gridItemCount).fill(null) as item, id}
-		<div
-			class="box"
-			use:gfocus
-			on:click={(v) => console.log("hellg")}
-			data-isClickable={true}
-		>
+		<div class="box" use:gfocus>
 			{id}
 		</div>
 	{/each}
