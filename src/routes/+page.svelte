@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { kbGFocus } from "$lib/kb_focus_handler";
+    import { kbGFocus } from "$lib/kb_focus_handler"
+    import { base } from '$app/paths';
 
     const { gfocus, windowKeydown } = kbGFocus("selected");
 
@@ -122,7 +123,7 @@
         Show outline around focusable elements
     </label>
 
-    <a href="/grid" use:focusable>Grid example</a>
+    <a href="{base}/grid" use:focusable>Grid example</a>
     <input type="text" use:focusable />
 </div>
 

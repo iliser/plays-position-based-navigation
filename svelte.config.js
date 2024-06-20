@@ -13,7 +13,8 @@ const config = {
 				assets: 'docs',
 				fallback: undefined,
 				precompress: false,
-				strict: true
+				strict: true,
+				base: process.env.NODE_ENV === 'production' ? '/plays-position-based-navigation' : '',
 			}
 		)
 	}
