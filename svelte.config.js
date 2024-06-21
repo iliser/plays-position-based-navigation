@@ -7,10 +7,6 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		paths: { 
-			relative: false, 
-			base: '/plays-position-based-navigation'
-		},
 		adapter: adapter(
 			{
 				pages: 'docs',
